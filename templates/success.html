@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>MOLI 門禁註冊成功</title>
+  <link rel="stylesheet" href="/static/style.css" />
+</head>
+<body>
+<header class="moli-header">
+  <div class="brand">
+    <span class="brand-mark"></span>
+    <span>MOLI 門禁系統</span>
+  </div>
+  <div class="lab-tag">Makers' Open Lab for Innovation</div>
+</header>
+
+<main class="main-center">
+  <div class="card card-center">
+    <h2 class="success-title">註冊完成</h2>
+    <p class="success-text">已成功綁定門禁資料，之後可直接刷學生證進出實驗室。</p>
+
+    <div class="meta">
+      <p><strong>學號：</strong>{{ user.student_id }}</p>
+      <p><strong>姓名：</strong>{{ user.name }}</p>
+    </div>
+
+    <a href="/" class="back-link">返回註冊頁面</a>
+  </div>
+</main>
+
+<footer class="moli-footer">
+  © MOLI – Makers' Open Lab for Innovation
+</footer>
+</body>
+</html>
