@@ -8,10 +8,7 @@ from sqlalchemy.orm import sessionmaker, Session
 from sqlalchemy.exc import IntegrityError
 import os
 
-DATABASE_URL = os.getenv(
-    "DATABASE_URL",
-    "postgresql://neondb_owner:npg_qIiz9kFg6YLM@ep-purple-lake-a1q3020c-pooler.ap-southeast-1.aws.neon.tech/neondb?sslmode=require"
-)
+
 
 app = FastAPI()
 
